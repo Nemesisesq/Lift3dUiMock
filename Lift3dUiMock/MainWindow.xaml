@@ -1,0 +1,49 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Lift3dUiMock.MainWindow"
+        Title="MainWindow" WindowState="Maximized" d:DesignWidth="945" Height="900" Width="1074">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Content="Lift3D" HorizontalAlignment="Stretch" VerticalAlignment="Center" FontSize="70"/>
+            <Button Content="THis Can be removed I left it in to give youn Idea of what I was trying to do.&#xD;&#xA;&#xD;&#xA;" Grid.Column="1" HorizontalAlignment="Left" Height="66" Margin="158,34,0,0" VerticalAlignment="Top" Width="450" Click="Button_Click"/>
+        </Grid>
+        <StackPanel Grid.ColumnSpan="2" Margin="0,0,0,85" Orientation="Vertical" Grid.Row="1">
+            <Label Content="Patient Id" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Top" />
+            <ComboBox Height="42" VerticalAlignment="Top" Width="180" Margin="7,0,13,0"/>
+        </StackPanel>
+        <Label Content="Chose Joint" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="7,99,13,0" Grid.Row="1" Grid.ColumnSpan="2" Width="180"/>
+        <ToggleButton Content="Neck" HorizontalAlignment="Stretch" Height="40" Margin="7,141,7,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <ToggleButton Content="L Sh" HorizontalAlignment="Stretch" Height="40" Margin="7,180,7,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <ToggleButton Content="R Sh" HorizontalAlignment="Stretch" Height="40" Margin="7,180,7,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1" />
+        <ToggleButton Content="L Elbow" HorizontalAlignment="Stretch" Height="40" Margin="7,219,7,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <ToggleButton Content="R Elbow" HorizontalAlignment="Stretch" Height="40" Margin="7,219,7,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1" />
+        <ToggleButton Content="L Wrist" HorizontalAlignment="Stretch" Height="40" Margin="7,258,7,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <ToggleButton Content="R Wrist" HorizontalAlignment="Stretch" Height="40" Margin="7,258,7,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1" />
+        <ToggleButton Grid.ColumnSpan="2" Content="Spine" HorizontalAlignment="Stretch" Height="40" Margin="7,297,7,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <ToggleButton Content="L Hip" HorizontalAlignment="Stretch" Height="40" Margin="7,336,7,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <ToggleButton Content="R Hip" HorizontalAlignment="Stretch" Height="40" Margin="7,336,7,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1"/>
+        <ToggleButton Content="L Knee" HorizontalAlignment="Stretch" Height="40" Margin="7,375,7,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <ToggleButton Content="R Knee" HorizontalAlignment="Stretch" Height="40" Margin="7,375,7,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button Content="Start" HorizontalAlignment="Stretch" Margin="7,20,7,0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="183" Height="69" FontSize="40" Padding="0" Background="#FF075D16"/>
+        <Button Content="Stop" HorizontalAlignment="Stretch" Margin="8,94,8,0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="183" Height="69" FontSize="40" Padding="0" Background="#FF8D0A0A"/>
+        <WrapPanel x:Name="JointPanel" Grid.Column="2" Grid.Row="1" Grid.RowSpan="2"/>
+    </Grid>
+
+
+</Window>
